@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
-from shared_functions.functions import update_progress_bar, check_role_threshold
+import os
+#from keep_alive import keep_alive
 
 prefix = "!"  
 
@@ -87,5 +88,6 @@ async def check_role_threshold(channel_id, role_id):
 async def on_ready():
     print(f"Connecté en tant que {bot.user.name}")
 
-# Lancement du bot
-bot.run(token)
+#keep_alive()
+token = os.environ.get("DISCORD_BOT_SECRET")
+client.run(token)
