@@ -2,9 +2,7 @@ import discord
 from discord.ext import commands
 from shared_functions.functions import update_progress_bar, check_role_threshold
 
-# Configuration du bot
-prefix = "!"  # Préfixe des commandes du bot
-token = "MTIyMDM2OTI2OTc3MTA3NTY0NA.GJKa4C.EsMt-puvcxDSO7V7wHDCnzCOXKjiXjOzr3n04Y"  # Le token de votre bot Discord
+prefix = "!"  
 
 # Définir les intents
 intents = discord.Intents.all()
